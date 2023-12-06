@@ -31,6 +31,8 @@ We built a Convolutional Neural Network (CNN) with the following architecture:
 
 ![alt text](https://github.com/polaternez/citrus_diseases_detection/blob/master/images/model.png "Convolutional Neural Network(CNN)")
 
+## Model Evaluation 
+
 We measure the model's loss using categorical cross-entropy and optimize it with the ADAM algorithm. After training, we obtain the following results:
 
 ![alt text](https://github.com/polaternez/citrus_diseases_detection/blob/master/images/model_evaluation.png "Model Performances")
