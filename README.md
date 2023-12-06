@@ -22,7 +22,10 @@ We utilize the <a href="https://www.tensorflow.org/datasets/catalog/citrus_leave
 
 
 ## Data Preprocessing
-To prepare the dataset for training, we first split it into 80% training data and 20% testing data. We then reshape and normalize the images to a standard format and pixel range. Finally, we convert the labels to a one-hot encoded format for efficient processing and learning.
+
+* **Data Split**: We split the dataset into 80% training data and 20% testing data to ensure the model generalizes well to unseen data.
+* **Image Preprocessing**: We reshape and normalize the images to a standard format and pixel range. 
+* **Label Encoding**: We convert the labels to a one-hot encoded format for efficient processing and learning. This representation allows the model to handle multiple labels effectively.
 
 
 ## Model Building 
