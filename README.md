@@ -18,7 +18,7 @@ Note: This project was made for educational purposes.
 ## Getting Data
 We utilize the <a href="https://www.tensorflow.org/datasets/catalog/citrus_leaves?hl=en">citrus_leaves</a> dataset from TensorFlow Datasets. This dataset consists of 594 PNG images of citrus leaves, categorized into four labels: Black Spot, Canker, Greening, and Healthy. The images have a resolution of 256x256 pixels.
 
-![alt text](https://github.com/polaternez/citrus_diseases_detection/blob/master/images/train_images.png "Train images")
+![alt text](https://github.com/polaternez/citrus-diseases-detection/blob/master/reports/figures/train_images.png "Train images")
 
 
 ## Data Preprocessing
@@ -32,18 +32,18 @@ We utilize the <a href="https://www.tensorflow.org/datasets/catalog/citrus_leave
 
 We built a Convolutional Neural Network (CNN) with the following architecture:
 
-![alt text](https://github.com/polaternez/citrus_diseases_detection/blob/master/images/model.png "Convolutional Neural Network(CNN)")
+![alt text](https://github.com/polaternez/citrus-diseases-detection/blob/master/reports/figures/model.png "Convolutional Neural Network(CNN)")
 
 ## Model Evaluation 
 
 We measure the model's loss using categorical cross-entropy and optimize it with the ADAM algorithm. After training, we obtain the following results:
 
-![alt text](https://github.com/polaternez/citrus_diseases_detection/blob/master/images/model_evaluation.png "Model Performances")
+![alt text](https://github.com/polaternez/citrus-diseases-detection/blob/master/reports/figures/model_evaluation.png "Model Performances")
 
 ## Productionization 
 In this step, we developed the UI using Flask. The API endpoint help receives a request containing images and returns the predicted type of citrus disease for each image.
 
-![alt text](https://github.com/polaternez/citrus_diseases_detection/blob/master/images/flask-api.png "Citrus Diseases Detection API")
+![alt text](https://github.com/polaternez/citrus-diseases-detection/blob/master/reports/figures/flask-api.png "Citrus Diseases Detection API")
 
 
 
