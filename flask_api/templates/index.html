@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Citrus Diseases Detection</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+<body>
+  <div class="login">
+    <h1>Citrus Diseases Detection</h1>
+
+    <form action="{{ url_for('predict') }}" method="post" enctype="multipart/form-data">
+      <label for="imageInput">Select an image of a citrus leaves:</label>
+      <input type="file" id="imageInput" name="imageInput" accept="image/*" required>
+      <br><br>
+      <input type="submit" value="Predict">
+    </form>
+
+    <div id="imagePreview"></div>
+    <script src="{{ url_for('static', filename='js/displayimage.js') }}"></script>
+
+    <p>
+      <b>Predicted Class:</b> {{ predicted_class }}<br>
+      <b>Confidence:</b> <i>{{ confidence }}</i>
+    </p>
+
+  </div>
+
+</body>
+</html>
