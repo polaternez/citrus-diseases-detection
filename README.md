@@ -1,17 +1,19 @@
 # Citrus Diseases Detection: Project Overview  
 This tool identifies diseased citrus trees by classifying citrus leaf images based on disease type.
 
-* Leverages the `citrus_leaves` dataset from TensorFlow Datasets.
-* Performs data preprocessing for standardization and label encoding.
-* Builds and evaluates a Convolutional Neural Network (CNN) on the dataset.
-* Develops a user-friendly client-facing API using Flask.
+- Leverages the `citrus_leaves` dataset from TensorFlow Datasets.
+- Performs data preprocessing for standardization and label encoding.
+- Builds and evaluates a Convolutional Neural Network (CNN) on the dataset.
+- Develops a user-friendly client-facing API using Flask.
 
 
 ## Code and Resources Used 
 **Python Version:** 3.10  
 **Packages:** numpy, pandas, matplotlib, tensorflow, tensorflow_datasets, flask, pillow  
-**Flask API Requirements:**  ```pip install -r requirements.txt```  
-**Create Anaconda Environment for Flask API:**  ```conda env create -n <ENVNAME> -f environment.yaml```  
+**Flask API Setup:**
+- ```pip install -r requirements.txt```  
+- ```conda env create -n <ENVNAME> -f environment.yaml``` (Anaconda Environment)
+  
 **Dataset:** https://www.tensorflow.org/datasets/catalog/citrus_leaves?hl=en
 
 
@@ -22,9 +24,9 @@ The project utilizes the <a href="https://www.tensorflow.org/datasets/catalog/ci
 
 
 ## Data Preprocessing
-* **Data Split:** Divides the dataset into 80% training and 20% testing data for robust model generalization.
-* **Image Preprocessing:** Reshapes and normalizes the images to a standard format and pixel range.
-* **Label Encoding:** Converts labels to one-hot encoded format for efficient processing and multi-label handling.
+- **Data Split:** Divides the dataset into 80% training and 20% testing data for robust model generalization.
+- **Image Preprocessing:** Reshapes and normalizes the images to a standard format and pixel range.
+- **Label Encoding:** Converts labels to one-hot encoded format for efficient processing and multi-label handling.
 
 
 ## Model Building 
