@@ -6,7 +6,6 @@ This tool identifies diseased citrus trees by classifying citrus leaf images bas
 * Builds and evaluates a Convolutional Neural Network (CNN) on the dataset.
 * Develops a user-friendly client-facing API using Flask.
 
-Note: This project created for educational purposes.
 
 ## Code and Resources Used 
 **Python Version:** 3.10  
