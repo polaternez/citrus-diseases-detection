@@ -48,7 +48,6 @@ def predict():
         # Get the predicted class and confidence
         predicted_class = class_names[prediction.argmax()]
         confidence = "{:.2f} %".format(prediction.max() * 100)
-
         return render_template("index.html",
                                 predicted_class=predicted_class,
                                 confidence=confidence)
